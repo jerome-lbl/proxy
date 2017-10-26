@@ -6,5 +6,6 @@ WORKDIR /usr/local/bin
 
 COPY ./getip.sh .
 
+RUN chmod +x getip.sh
 
-
+COMMAND getip.sh
