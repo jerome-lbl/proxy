@@ -1,4 +1,3 @@
-# FROM sameersbn/squid
 FROM debian 
 
 RUN apt-get update && apt-get install -y dnsutils ssh
