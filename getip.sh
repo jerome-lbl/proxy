@@ -9,8 +9,8 @@ echo ${ip:0:6}
 if [ "${ip:0:6}" = "172.31" ]
 then
 	echo "Réseau local"
-	ssh -L ${HOSTNAME}:3128:proxyng.in.ac-versailles.fr:8080 -CfN ngmdev@groli3.in.ac-versailles.fr
-	service stop squid
+	ssh -L ${HOSTNAME}:3129:proxyng.in.ac-versailles.fr:8080 -CfN ngmdev@groli3.in.ac-versailles.fr
 else
 	echo "Réseau internet"
+	ssh -L ${HOSTNAME}:3129:${HOSTNAME}:3128 -CfN ${USER}@${HOSTNAME}
 fi
