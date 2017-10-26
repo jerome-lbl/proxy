@@ -12,5 +12,4 @@ then
 	ssh -L ${HOSTNAME}:3129:proxyng.in.ac-versailles.fr:8080 -CfN ngmdev@groli3.in.ac-versailles.fr
 else
 	echo "Réseau internet"
-	ssh -L ${HOSTNAME}:3129:${HOSTNAME}:3128 -CfN ${USER}@${HOSTNAME}
 fi
