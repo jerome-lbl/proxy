@@ -1,6 +1,6 @@
 FROM debian 
 
-RUN apt-get update && apt-get install -y dnsutils ssh
+RUN apt-get update && apt-get install -y dnsutils nmap ssh
 
 WORKDIR /usr/local/bin
 
