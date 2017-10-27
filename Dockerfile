@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /usr/local/bin
 
-ADD ./getip.sh .
+COPY ./getip.sh .
 
 RUN chmod +x getip.sh
 
