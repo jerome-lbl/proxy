@@ -13,4 +13,4 @@ RUN chmod +x getip.sh
 
 EXPOSE 3128
 
-CMD getip.sh
+CMD ["./getip.sh"]
