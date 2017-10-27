@@ -13,4 +13,5 @@ RUN chmod +x getip.sh
 
 EXPOSE 3128
 
-CMD ["./getip.sh"]
+ENTRYPOINT ["/usr/local/bin/getip.sh"]
+CMD ["bash"]
